@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Piano Chords</title>
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Array Multipurpose Startup Business Template">
+    <meta name="keywords" content="Array HTML Template, Array Startup Business Template, Startup Template">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container container-s">
+          <a class="navbar-brand" href="index.html">Piano Chords</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right">
+              <!--
+                <li class="nav-item"><a class="nav-link" href="javascript:testfunction()">Test</a></li>
+              -->
+              <li class="nav-item"><a class="nav-link" href="javascript:resetChordList()">Start again</a></li>
+              <li class="nav-item"><a class="btn-cta nav-link js-scroll-trigger" href="#add">Add chord</a></li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- // Navigation -->
+
+      <div id="main" class="main">
+        
+        <!-- Header -->
+        <div class="home">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <div class="hero-img wow fadeIn">
+                  <img class="img-fluid" src="assets/images/piano-header.jpg" alt="Home">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="hero-content wow fadeIn">
+                  <h1>Piano Chord Selector</h1>
+                  <p>Use this page to combine multiple chords for a song. Simply add the preferred chords and select the variation of each chord.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // Header -->
+
+        <!-- Features Section -->
+        <div id="chords" class="flex-split">
+          <div class="container-s">
+            <div class="flex-intro align-center wow fadeIn">
+              <h2>Selected chords</h2>
+              <p>In this area you can see all the chords you added already. By clicking on the buttons beside each chord you can switch between the different variations.</p>
+            </div>
+            
+            <div id="chordlist">
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+         <!-- Add Chord -->
+         <div id="add" class="yd-stats wow fadeIn">
+           <div class="container-s">
+             <div class="row text-center">
+               <div class="col-sm-12">
+                 <div class="intro">
+                   <h2>Add an additional chord</h2>
+                   <p>You can add additional chords here. Simply select one by clicking on one of the following buttons.</p>
+
+                   <button class="btn-action-light" onclick="addChord('C')">C</button>
+                   <button class="btn-action-light" onclick="addChord('Cm')">Cm</button>
+                   <button class="btn-action-light" onclick="addChord('C7')">C7</button>
+                   <button class="btn-action-light" onclick="addChord('Cm7')">Cm7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('D')">D</button>
+                   <button class="btn-action-light" onclick="addChord('Dm')">Dm</button>
+                   <button class="btn-action-light" onclick="addChord('D7')">D7</button>
+                   <button class="btn-action-light" onclick="addChord('Dm7')">Dm7</button>
+                   <button class="btn-action-light" onclick="addChord('Dsus4')">Dsus4</button>
+                   <button class="btn-action-light" onclick="addChord('Dsus2')">Dsus2</button>
+                   <button class="btn-action-light" onclick="addChord('D7sus4')">D7sus4</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('E')">E</button>
+                   <button class="btn-action-light" onclick="addChord('Em')">Em</button>
+                   <button class="btn-action-light" onclick="addChord('E7')">E7</button>
+                   <button class="btn-action-light" onclick="addChord('Em7')">Em7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('F')">F</button>
+                   <button class="btn-action-light" onclick="addChord('Fm')">Fm</button>
+                   <button class="btn-action-light" onclick="addChord('F7')">F7</button>
+                   <button class="btn-action-light" onclick="addChord('Fm7')">Fm7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('G')">G</button>
+                   <button class="btn-action-light" onclick="addChord('Gm')">Gm</button>
+                   <button class="btn-action-light" onclick="addChord('G7')">G7</button>
+                   <button class="btn-action-light" onclick="addChord('Gm7')">Gm7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('A')">A</button>
+                   <button class="btn-action-light" onclick="addChord('Am')">Am</button>
+                   <button class="btn-action-light" onclick="addChord('A7')">A7</button>
+                   <button class="btn-action-light" onclick="addChord('Am7')">Am7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('A#')">A#</button>
+                   <button class="btn-action-light" onclick="addChord('A#m')">A#m</button>
+                   <button class="btn-action-light" onclick="addChord('A#7')">A#7</button>
+                   <button class="btn-action-light" onclick="addChord('A#m7')">A#m7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('Bb')">Bb</button>
+                   <button class="btn-action-light" onclick="addChord('Bbm')">Bbm</button>
+                   <button class="btn-action-light" onclick="addChord('Bb7')">Bb7</button>
+                   <button class="btn-action-light" onclick="addChord('Bbm7')">Bbm7</button>
+                   <br/>
+                   <button class="btn-action-light" onclick="addChord('B')">B</button>
+                   <button class="btn-action-light" onclick="addChord('Bm')">Bm</button>
+                   <button class="btn-action-light" onclick="addChord('B7')">B7</button>
+                   <button class="btn-action-light" onclick="addChord('Bm7')">Bm7</button>
+                  </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- // Add Chord -->
+
+        
+
+
+        <!-- Footer -->
+        <div class="footer-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="footer-logo" href="#">Piano Chords</a>
+              </div>
+              <div class="col-md-4">
+                <h6>&copy; intranda GmbH 2022 - All Rights Reserved</h6>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="#">Impressum</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // Footer -->
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <script>
+      var myChords;
+
+      (function() {
+        myChords = [];
+        // myChords = JSON.parse(sessionStorage.getItem("chords"));
+        // if (myChords==null){
+        //   myChords = [];
+        // }
+        renderContent();
+      })();
+
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // TESTS
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function testfunction() {
+        let c = new Chord ("c", [ 'c1', 'c2', 'c3' ]);
+        c.invert();
+      }
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // function to add a new chord to the list
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function addChord(name) {
+        myChords.push(receiveChord(name));
+        renderContent();
+      }
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // function to remove a chord from the list
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function removeChord(index) {
+        myChords.splice(index, 1);
+        renderContent();
+      }
+      
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // function to remove a chord from the list
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function invertChord(index) {
+        var c = myChords[index];
+        c.invert();
+        renderContent();
+      }
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // function to reset the list
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function resetChordList() {
+        myChords = [];
+        renderContent();
+      }
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // get Class from all available ones
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function receiveChord(name) {
+        switch (name) {
+          case "C":
+            return new Chord ("C", [ 'c', 'c_e', 'c_g' ]);
+          case "Cm":
+            return new Chord ("Cm", [ 'cm', 'cm_e_flat', 'cm_g' ]);
+          case "C7":
+            return new Chord ("C7", [ 'c7', 'c7_e', 'c7_g', 'c7_b_flat' ]);
+          case "Cm7":
+            return new Chord ("Cm7", [ 'cm7', 'cm7_e_flat', 'cm7_g', 'cm7_b_flat' ]);
+          
+          case "D":
+            return new Chord ("D", [ 'd', 'd_f_sharp', 'd_a' ]);
+          case "Dm":
+            return new Chord ("Dm", [ 'dm', 'dm_f', 'dm_a' ]);
+          case "D7":
+            return new Chord ("D7", [ 'd7', 'd7_f_sharp', 'd7_a', 'd7_c' ]);
+          case "Dm7":
+            return new Chord ("Dm7", [ 'dm7', 'dm7_f', 'dm7_a', 'dm7_c' ]);
+          case "Dsus4":
+            return new Chord ("Dsus4", [ 'dsus4' ]);
+          case "Dsus2":
+            return new Chord ("Dsus2", [ 'dsus2' ]);
+          case "D7sus4":
+            return new Chord ("D7sus4", [ 'd7sus4' ]);
+          
+          case "E":
+            return new Chord ("E", [ 'e', 'e_g_sharp', 'e_b' ]);
+          case "Em":
+            return new Chord ("Em", [ 'em', 'em_g', 'em_b' ]);
+          case "E7":
+            return new Chord ("E7", [ 'e7', 'e7_g_sharp', 'e7_b', 'e7_d' ]);
+          case "Em7":
+            return new Chord ("Em7", [ 'em7', 'em7_g', 'em7_b', 'em7_d' ]);
+          
+          case "F":
+            return new Chord ("F", [ 'f', 'f_a', 'f_c' ]);
+          case "Fm":
+            return new Chord ("Fm", [ 'fm', 'fm_a_flat', 'fm_c' ]);
+          case "F7":
+            return new Chord ("F7", [ 'f7', 'f7_a', 'f7_c', 'f7_e_flat' ]);
+          case "Fm7":
+            return new Chord ("Fm7", [ 'fm7', 'fm7_a_flat', 'fm7_c', 'fm7_e_flat' ]);
+          
+          case "G":
+            return new Chord ("G", [ 'g', 'g_b', 'g_d' ]);
+          case "Gm":
+            return new Chord ("Gm", [ 'gm', 'gm_b_flat', 'gm_d' ]);
+          case "G7":
+            return new Chord ("G7", [ 'g7', 'g7_b', 'g7_d', 'g7_f' ]);
+          case "Gm7":
+            return new Chord ("Gm7", [ 'gm7', 'gm7_b_flat', 'gm7_d', 'gm7_f' ]);
+          
+          case "A":
+            return new Chord ("A", [ 'a', 'a_c_sharp', 'a_e' ]);
+          case "Am":
+            return new Chord ("Am", [ 'am', 'am_c', 'am_e' ]);
+          case "A7":
+            return new Chord ("A7", [ 'a7', 'a7_c_sharp', 'a7_e', 'a7_g' ]);
+          case "Am7":
+            return new Chord ("Am7", [ 'am7', 'am7_c', 'am7_e', 'am7_g' ]);
+          
+          case "A#":
+            return new Chord ("A#", [ 'b_flat', 'b_flat_d', 'b_flat_f' ]);
+          case "A#m":
+            return new Chord ("A#m", [ 'b_flat_m', 'b_flat_m_d_flat', 'b_flat_m_f' ]);
+          case "A#7":
+            return new Chord ("A#7", [ 'b_flat_7', 'b_flat_7_d', 'b_flat_7_f', 'b_flat_7_a_flat' ]);
+          case "A#m7":
+            return new Chord ("A#m7", [ 'b_flat_m7', 'b_flat_m7_d_flat', 'b_flat_m7_f', 'b_flat_m7_a_flat' ]);
+
+          case "Bb":
+            return new Chord ("Bb", [ 'b_flat', 'b_flat_d', 'b_flat_f' ]);
+          case "Bbm":
+            return new Chord ("Bbm", [ 'b_flat_m', 'b_flat_m_d_flat', 'b_flat_m_f' ]);
+          case "Bb7":
+            return new Chord ("Bb7", [ 'b_flat_7', 'b_flat_7_d', 'b_flat_7_f', 'b_flat_7_a_flat' ]);
+          case "Bbm7":
+            return new Chord ("Bbm7", [ 'b_flat_m7', 'b_flat_m7_d_flat', 'b_flat_m7_f', 'b_flat_m7_a_flat' ]);
+
+          case "B":
+            return new Chord ("B", [ 'b', 'b_d_sharp', 'b_f_sharp' ]);
+          case "Bm":
+            return new Chord ("Bm", [ 'bm', 'bm_d', 'bm_f_sharp' ]);
+          case "B7":
+            return new Chord ("B7", [ 'b7', 'b7_d_sharp', 'b7_f_sharp', 'b7_a' ]);
+          case "Bm7":
+            return new Chord ("Bm7", [ 'bm7', 'bm7_d', 'bm7_g_flat', 'bm7_a' ]);
+          
+          case "":
+            return new Chord ("", [ '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+          case "":
+            return new Chord ("", [ '', '', '', '' ]);
+
+
+
+
+
+
+
+
+
+          
+          default:
+            console.error("the chord to receive is unknown: " + name);
+            return null;
+        }
+      }
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // Simple Chord Class
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      class Chord {
+
+        // constructor
+        constructor(label, inversions) {
+          this.label = label;
+          this.inversions = inversions;
+          this.current = this.inversions[0];
+        }
+        
+        // invert the chord
+        invert() {
+          for (let i in this.inversions) {
+            var x = Number(i)
+            var temp = this.inversions[x];
+            if (temp == this.current){
+              if (this.inversions.length > (x+1)){
+                this.current = this.inversions[x+1];
+                return;
+              }
+            }
+          }
+          this.current = this.inversions[0];
+        }
+      }
+
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // function to render the current status
+      // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      function renderContent(){
+        var content = "";
+
+        // if the list is empty don't show anything
+        if (myChords == null || myChords.length == 0){
+          content = '<p class="nochords">Currently you did not add any chord to display here.</p>';
+        } else {
+          var i = 0;
+          // if the list contains objects render these
+          myChords.forEach(function(chord) {
+            content += '<div id="chord1" class="flex-inner align-center">';
+            content += '  <div class="f-image wow">';
+            content += '    <img id="image1" class="img-fluid" src="assets/chords/' + chord.current + '.png">';
+            content += '  </div>';
+            content += '  <div class="f-text">';
+            content += '    <div class="left-content">';
+            content += '      <h3 style="margin-bottom:15px;">' + chord.label + '</h3>';
+            //content += '      <p>' + i + ' - ' + chord.current + '</p>';
+            //content += '      <p id="inversions">' + chord.inversions + '</p>';
+            content += '      <button id="btnInvert1" class="btn-action-light" onclick="invertChord(' + i + ')">invert</button>';
+            content += '      <button id="btnRemove1" class="btn-action-light" onclick="removeChord(' + i + ')">remove</button>';
+            content += '     </div>';
+            content += '  </div>';
+            content += '</div>';
+            i++;
+          });
+        }
+        document.getElementById("chordlist").innerHTML = content;
+      }
+      </script>
+
+      
+  </body>
+</html>
+
+
+
+<!-- 
+  
+  https://codepen.io/enteleform/pen/PepqYV
+  https://cssdeck.com/labs/pure-css3-piano
+  https://css-tricks.com/how-to-code-a-playable-synth-keyboard/
+
+-->
