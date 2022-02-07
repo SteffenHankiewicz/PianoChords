@@ -126,6 +126,8 @@ function receiveChord(name) {
       return new Chord ("A7", [ 'a7', 'a7_c_sharp', 'a7_e', 'a7_g' ]);
     case "Am7":
       return new Chord ("Am7", [ 'am7', 'am7_c', 'am7_e', 'am7_g' ]);
+    case "A7sus4":
+      return new Chord ("A7sus4", [ 'a7sus4' ]);
     
     case "A#":
       return new Chord ("A#", [ 'b_flat', 'b_flat_d', 'b_flat_f' ]);
