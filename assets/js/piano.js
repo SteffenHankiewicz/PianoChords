@@ -67,9 +67,9 @@ function receiveChord(name) {
     case "Cm7":
       return new Chord ("Cm7", [ 'cm7', 'cm7_e_flat', 'cm7_g', 'cm7_b_flat' ]);
     
-    case "C#":
+    case "Csharp":
       return new Chord ("C#", [ 'd_flat', 'd_flat_f', 'd_flat_a_flat' ]);
-    case "C#m":
+    case "Csharpm":
       return new Chord ("C#m", [ 'd_flat_m', 'd_flat_m_e', 'd_flat_m_a_flat' ]);
 
     case "D":
